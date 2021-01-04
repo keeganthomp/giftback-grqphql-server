@@ -7,7 +7,7 @@ const buildQuery = args => {
   const categoryList = `{${categories.join()}}`
 
   let query = 'SELECT * FROM donation_centers'
-  if (doCategoriesExist) query += ` WHERE categories @> '${categoryList}'`
+  if (doCategoriesExist) query += ` WHERE categories && '${categoryList}'`
   if (city) query += ` AND city = '${city}'`
   if (state) query += ` AND state = '${state}'`
   if (zip) query += ` AND zip = '${zip}'`
