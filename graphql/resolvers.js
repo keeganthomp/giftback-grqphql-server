@@ -11,7 +11,7 @@ const buildQuery = args => {
   if (city) query += ` AND city = '${city}'`
   if (state) query += ` AND state = '${state}'`
   if (zip) query += ` AND zip = '${zip}'`
-  
+
   return query
 }
 

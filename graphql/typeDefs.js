@@ -15,11 +15,14 @@ const typeDefs = gql`
     city: String
     state: String
     zip: String
+    address: String
     phone_number: String
     contact_name: String
     email: String
     instagram: String
     website: String
+    latitude: Float
+    longitude: Float
     categories: [String]
   }
 `
